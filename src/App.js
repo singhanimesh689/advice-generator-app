@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Quotes from './components/Quotes/Quotes';
 
 const App = () => {
   return (
     <div>
-      App
+      <Quotes/>
     </div>
   )
 }

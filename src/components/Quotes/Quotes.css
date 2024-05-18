@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body {
+    background-color:  hsl(218, 23%, 16%);
+}
+
+.box {
+    position: relative;
+    width: 550px;
+    height: 370px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(217, 19%, 24%);
+    font-family: "Manrope",sans-serif;
+    border-radius: 20px;
+    padding: 10px;
+    overflow: visible;
+    font-weight: 800;
+}
+
+.Button {
+    position: absolute;
+    bottom : -40px;
+    border-radius: 60px;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(150, 100%, 66%);
+    cursor: pointer;
+    border: 0;
+
+}
+.Heading {
+    color :hsl(150, 100%, 66%);
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.Button:not([disabled]):hover {
+  box-shadow: 0 0 5px hsl(150, 100%, 66%),0 0 25px hsl(150, 100%, 66%),0 0 50px hsl(150, 100%, 66%);
+}
+
+.quote {
+    height: 170px;
+    overflow: hidden;
+    width: 90%;
+    text-align: center;
+    font-size: 28px;
+    color: white;
+}
+
+.dice {
+    height: 40px;
+    width: 40px;
+}
+
+@media only screen and (min-width : 550px) and (min-height : 300px){
+    .box {
+        position : absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+@media only screen and (max-width : 375px){
+    .box {
+        position: absolute;
+        width: 350px;
+        height: 375px;
+        margin: 2px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .divider-image{
+        width: 350px;
+    }
+    .quote{
+        height: 240px;
+        text-align: center;
+        margin: 0;
+    }
+}
